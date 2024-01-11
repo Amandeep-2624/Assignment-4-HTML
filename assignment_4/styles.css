@@ -1,0 +1,225 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E5CFF7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/**************** styling navbar **************************************/
+nav {
+    background-color: #5C4B99;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7f50;
+}
+
+/******************************* header section styling *********************************/
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+/****************************** section styling *******************************************/
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/****************************************** footer styling **************************************/
+footer {
+    background-color: #5C4B99;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff7f50;
+}
+
+.profile-img {
+    margin-top: 5PX;
+    width: 350px;
+    height: 360px;
+    border-radius: 50%;
+    /* Makes the image round */
+    /* object-fit: cover; Ensures the image covers the entire container */
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease;
+}
+
+.fonts {
+    font-family: cursive;
+}
+
+.heading-effect:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    font-size: 40px;
+}
+
+.name-heading:hover {
+    color: grey;
+}
+
+.profile-img:hover {
+    transform: rotate(360deg);
+}
+
+.skills-fonts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************************************* media query for responsiveness ***********************************/
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    ul {
+        margin-top: 15px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav {
+        padding: 8px 0;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    ul li {
+        margin-bottom: 6px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
